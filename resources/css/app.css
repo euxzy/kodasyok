@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    ::-webkit-scrollbar {
+        @apply w-[0.4vw];
+    }
+    ::-webkit-scrollbar-track {
+        @apply rounded-md bg-navy;
+    }
+    ::-webkit-scrollbar-thumb {
+        @apply rounded-md bg-navy shadow-[inset_0_0_0.7rem_rgba(202,194,177,0.8)];
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        @apply rounded-md bg-white shadow-[inset_0_0_0.4rem] shadow-gold;
+    }
+}
