@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -6,16 +6,20 @@ module.exports = {
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
-        './resources/js/**/*.jsx',
+        './resources/js/**/*.jsx'
     ],
 
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                sans: ['Nunito', ...defaultTheme.fontFamily.sans]
             },
-        },
+            colors: {
+                navy: '#10123c',
+                gold: '#cac2b1'
+            }
+        }
     },
 
-    plugins: [require('@tailwindcss/forms')],
-};
+    plugins: [require('@tailwindcss/forms')]
+}
