@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use Illuminate\Http\Request;
-use Inertia\Middleware;
+use inertia\Middleware;
 use Tightenco\Ziggy\Ziggy;
 
 class HandleInertiaRequests extends Middleware
@@ -21,8 +21,7 @@ class HandleInertiaRequests extends Middleware
      * @param  \Illuminate\Http\Request  $request
      * @return string|null
      */
-    public function version(Request $request)
-    {
+    public function version(Request $request){
         return parent::version($request);
     }
 
